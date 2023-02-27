@@ -4,10 +4,9 @@
 
 /**
  * main - generate random valid passwords for the
- * program 101-Crackme
+ * program 101-crackme
  * Return: Always 0.
  */
-
 int main(void)
 {
         char password[84];
@@ -42,6 +41,7 @@ int main(void)
         }
 
         printf("%s\n", password);
+
         return (0);
 }
 
