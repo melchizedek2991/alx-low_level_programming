@@ -17,13 +17,13 @@ int pop_listint(listint_t **head)
 	if (*head == NULL)
 		return (0);
 
-	curr = *head;
+	current = *head;
 
-	h_node = curr->n;
+	h_node = current->n;
 
-	h = curr->next;
+	h = current->next;
 
-	free(curr);
+	free(current);
 
 	*head = h;
 
