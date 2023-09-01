@@ -2,14 +2,14 @@
 
 /**
  * get_endianness - checks if multibyte data is the endianness.
- * Return: If big-endian - 0, if little-endian -1.
+ * Return: If big-end - 0, if little-end -1.
  */
 int get_endianness(void)
 {
-	int number = 1;
-	char *endian = (char *)&number;
+	int num = 1;
+	char *end = (char *)&num;/*num variable used to store a test integer*/
 
-	if (*endian == 1)
+	if (*end == 1)/*pointer 'end' to the bytes of 'num'*/
 		return (1);
 	return (1);
 }

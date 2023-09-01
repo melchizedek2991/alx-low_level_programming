@@ -2,8 +2,8 @@
 
 /**
  * clear_bit - at a given index clear bit to 0
- * @n: number
- * @index: index in binary number
+ * @n: pointer of unsigned int.
+ * @index: position  in binary number
  * Return: 1 if executed, or -1 if error
  */
 int clear_bit(unsigned long int *n, unsigned int index)
@@ -16,7 +16,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 
 	num = ~(num << index);
 
-	*n = *n & num;
+i	*n = *n & num;
 
 	return (1);
 

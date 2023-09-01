@@ -3,8 +3,8 @@
 /**
  * get_bit - returns value of a bit
  *
- * @n: unsigned long int input.
- * @index: index of the bit.
+ * @n: unsigned long int.
+ * @index: The position of bit to be retrieve.
  *
  * Return: bit value
  */
