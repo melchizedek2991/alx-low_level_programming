@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * clear_bit - clear bit to 0 at a given index
+ * clear_bit - clean up bit to 0 at a given index
  * @n: number
- * @index: index within binary number
+ * @index: location inside binary number
  * Return: 1 if success, or -1 if error
  */
 int clear_bit(unsigned long int *n, unsigned int index)
@@ -14,10 +14,9 @@ int clear_bit(unsigned long int *n, unsigned int index)
 
 		return (-1);
 
-	num = ~(num << index);/*bitwise Not operator is an unary operator*/
-	/*which is why we use the () to nest our left shift operator*/
+	num = ~(num << index);
 
-	*n = *n & num;/*bitwise AND operator*/
+	*n = *n & num;
 
 
 
